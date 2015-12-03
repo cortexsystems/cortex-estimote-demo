@@ -1,0 +1,21 @@
+{
+    "name": "com.estimote.apps.user-count-demo",
+    "version": "1.0.0",
+    "displayName": "Estimote User Count Demo",
+    "description": "Test application to display number of users nearby an Estimote beacon.",
+    "author": "Cortex",
+    "email": "support@cortexpowered.com",
+    "homepage": "http://www.cortexpowered.com",
+    "type": "application",
+    "assets": {
+        "icon128": "",
+        "icon256": "./app_assets/icon500.png",
+        "icon512": "",
+        "screenshot1": "./app_assets/screenshot1.png",
+        "screenshot2": "",
+        "screenshot3": "",
+        "screenshot4": "",
+        "screenshot5": ""
+    },
+    "parameters": []
+}
