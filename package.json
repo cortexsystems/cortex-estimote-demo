@@ -1,8 +1,8 @@
 {
   "name": "com.estimote.apps.user-count-demo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "BSD-3-Clause",
-  "description": "Test application to display number of users nearby an Estimote beacon.",
+  "description": "Test application to display Estimote images when users are nearby an Estimote beacon.",
   "main": "src/index.js",
   "scripts": {},
   "devDependencies": {
