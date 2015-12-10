@@ -28,6 +28,7 @@ class View
 
   _offer: ->
     if @_urls.length == 0
+      console.warn "_offer returns, no images to render."
       return
 
     if @_idx >= @_urls.length
@@ -36,12 +37,16 @@ class View
     url = @_urls[@_idx]
     @_idx += 1
     if not (url of @_images)
+      console.warn "_offer returns, bad image url #{url}"
       return
+
+    console.warn "Submitting view for #{url}"
 
     node = @_images[url].node
     duration = @_images[url].duration
 
     view = (done) =>
+      console.warn "Rendering view for #{url}"
       @_activeViews -= 1
       container = document.getElementById 'container'
       while container.firstChild?
@@ -84,6 +89,7 @@ class View
       do (image) =>
         @_createDOMNode image
           .then (node) =>
+            console.warn "Image node created for #{image.url}"
             @_urls.push image.url
             @_images[image.url] =
               node: node
